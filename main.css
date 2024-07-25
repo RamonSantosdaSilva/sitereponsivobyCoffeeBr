@@ -1,0 +1,243 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.container { 
+    max-width: 1024;
+    width: 100%;
+}
+
+.medidainternaheader { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+header{ 
+    padding: 16px;
+    background-color: rgb(124, 89, 61);
+    color: #fff;
+    margin: 0 auto;
+}
+
+header ul li a { 
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 16px;
+}
+
+header ul { 
+    list-style: none;
+    display: flex;
+}
+
+.containersobre section { 
+    display: flex;
+    max-width: 70%;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.containersobre section img { 
+    width: 350px;
+    object-fit: contain;
+}
+
+.containersobre span { 
+    margin-left: 30px;
+}
+
+.containersobre span h2 { 
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(124, 89, 61);
+}
+
+.containersobre span p { 
+    margin-top:16px;
+}
+
+.produtoslista { 
+    text-align: center;
+}
+
+.containerprodutos { 
+    width: 70%;
+    margin: 50px auto;
+}
+
+aside section h2 { 
+
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(124, 89, 61);
+
+}
+
+.produtoslista button { 
+    padding: 8px;
+    background-color: rgb(124, 89, 61);
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 100%;
+}
+
+.produtoslista img { 
+    width: 100%;
+}
+
+
+.produdoscafe { 
+
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 22.8%);
+    column-gap: 3%;
+    grid-row: 5%;
+}
+
+@media screen and (max-width: 640px) { 
+
+        header { 
+            width: 100%;
+        }
+
+        .medidainternaheader {
+            max-width: 80%;
+        }
+
+        .medidainternaheader h1 { 
+            font-size: 24px;
+        }
+
+        .medidainternaheader nav ul li a {
+            font-size: 12px;
+        }
+
+        .medidainternaheader nav ul { 
+            display: block;
+            margin-left: 6px;
+        }
+
+
+        .containersobre section { 
+            display: block;
+            max-width: 80%;
+            margin: 35px auto;
+        }
+
+        .containersobre section img { 
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .containerprodutos { 
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .produdoscafe { 
+            margin-top: 50px auto;
+            display: block;
+        }
+
+        .produtoslista { 
+            max-width: 100%;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .produtoslista img { 
+            width: 100%;
+            object-fit: contain;
+            padding: 8px;
+        }
+
+        .produtoslista p{ 
+            padding: 12px 0px;
+        }
+
+
+        .produtoslista button { 
+            padding: 8px;
+            background-color: rgb(124, 89, 61);
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    .containersobre section { 
+        display: block;
+        max-width: 80%;
+        margin: 35px auto;
+    }
+
+    .containersobre section img { 
+        width: 100%;
+        object-fit: contain;
+    }
+
+    
+    .containerprodutos { 
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .produdoscafe { 
+    max-width: 95%;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 7%;
+
+    }
+
+    .produtoslista img { 
+        padding: 8px 0px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    
+
+    .produtoslista { 
+        max-width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .produtoslista p{ 
+        padding: 12px 0px;
+    }
+
+    .produtoslista button { 
+        padding: 8px;
+        background-color: rgb(124, 89, 61);
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+
+}
+
